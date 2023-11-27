@@ -1,3 +1,4 @@
+.angular/
 .idea/
 PiGallery2.iml
 node_modules/
@@ -28,3 +29,6 @@ locale.source.xlf
 test.*
 /db/
 /test/cypress/screenshots/
+*.sublime-project
+*.sublime-workspace
+.DS_Store

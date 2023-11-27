@@ -15,6 +15,8 @@ export interface MediaMetadata {
   size: MediaDimension;
   creationDate: number;
   fileSize: number;
+  title?: string;
+  caption?: string;
 }
 
 export interface MediaDimension {

@@ -11,7 +11,7 @@
     "build": "tsc && gulp build-prod",
     "build-en": "tsc && gulp build-prod --languages=en",
     "create-release": "gulp create-release",
-    "build-backend": "tsc",
+    "build-backend": "tsc -w",
     "pretest": "tsc",
     "test": "ng test  && nyc mocha --recursive test",
     "test-backend": "tsc && mocha --recursive test",
@@ -25,7 +25,8 @@
     "lint": "ng lint",
     "start-e2e-server": "node ./test/folder-reset test/e2e && node ./src/backend/index --config-path=test/e2e/config.json --Database-dbFolder=test/e2e --Server-port=8080",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "clean-db": "rm -rf db/"
   },
   "repository": {
     "type": "git",
